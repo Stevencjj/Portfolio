@@ -57,3 +57,116 @@ a {
   color: #0073b1;
   text-decoration: none;
 }
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Evitar barra de desplazamiento horizontal */
+}
+
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+  background: white;
+  padding: 40px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+header {
+  text-align: center;
+}
+
+header img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+h1 {
+  margin: 10px 0 5px;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hacer que cada sección tenga un efecto de aparición */
+section {
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards;
+  visibility: visible;
+}
+
+section:nth-child(1) {
+  animation-delay: 0.3s; /* Se activa un poco después */
+}
+section:nth-child(2) {
+  animation-delay: 0.6s; /* Se activa un poco después */
+}
+section:nth-child(3) {
+  animation-delay: 0.9s; /* Se activa un poco después */
+}
+section:nth-child(4) {
+  animation-delay: 1.2s; /* Se activa un poco después */
+}
+section:nth-child(5) {
+  animation-delay: 1.5s; /* Se activa un poco después */
+}
+section:nth-child(6) {
+  animation-delay: 1.8s; /* Se activa un poco después */
+}
+
+/* Efectos adicionales */
+h2 {
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+  margin-top: 40px;
+  color: #555;
+}
+
+.job, .education-item, .project {
+  margin-bottom: 20px;
+}
+
+ul.skills {
+  list-style: none;
+  padding: 0;
+}
+
+ul.skills li {
+  display: inline-block;
+  background-color: #e0e0e0;
+  padding: 6px 12px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+a {
+  color: #0073b1;
+  text-decoration: none;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  header img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
